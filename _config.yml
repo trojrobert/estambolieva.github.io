@@ -8,8 +8,8 @@ tags:
   - jekyll
   - theme
   - netlify
-email: youremail@xyz.com
-disqus_username: disqus_username
+email: estambolieva@gmail.com
+disqus_username: disqus_Lue1J4h5CM
 show_hero: true
 menu:
   - title: Home
@@ -24,12 +24,8 @@ menu:
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: github_username
-facebook_username: facebook_username
-twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
+github_username: estambolieva
+linkedin_username: ekaterina-stambolieva
 
 
 # Posts Settings
