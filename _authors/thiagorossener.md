@@ -1,15 +1,11 @@
 ---
 layout: author
-photo: /assets/img/uploads/profile.png
-name: thiagorossener
-display_name: Thiago Rossener
+photo: /assets/img/uploads/profile.jpg
+name: katstam
+display_name: Ekaterina Stambolieva
 position: Chief Editor
-bio: Just a developer.
-github_username: thiagorossener
-facebook_username: thiagorossener
-twitter_username: thiagorossener
-instagram_username: thiagorossener
-linkedin_username: thiagorossener
-medium_username: thiagorossener
+bio: Impact - Data - Deep Tech.
+github_username: estambolieva
+linkedin_username: ekaterina-stambolieva
 ---
 
