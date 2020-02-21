@@ -1,126 +1,44 @@
 ---
-date: 2015-09-06 12:00:00
+date: 2020-02-18 12:00:00
 layout: post
-title: Passion is dangerous, go for it!
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+title: I walked away from € 152 500!
+subtitle: This is what happened to my startup project in its first 2 years of existence.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559825288/theme17_nlndhx.jpg
-optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559825288/theme17_nlndhx.jpg
+image: https://images.unsplash.com/photo-1519669417670-68775a50919c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60
+<!-- optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559825288/theme17_nlndhx.jpg -->
 category: work
 tags:
-  - work
-  - career
+  - startups
+  - horror
 author: thiagorossener
 ---
 
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+Pen in hand and a white piece of paper in front of me, I find myself unable to start writing. I need to close my eyes, take a deep breath, exhale loudly through my moth so I can begin. 
+Here it goes.
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+> This is a startup horror story. A true one as well.
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+## # Dream
 
-## Inline HTML elements
+I am a person who works to deliver solutions to climate change. As many, I believe we are late. I expect that global warming will hit us hard within my lifetime and that the human civilization - as we know it - will sieze to exist. However I do not see this fact through the negative lense it is usually seen. Earth, humanity and climate change is our collective story, and as the authrs of it we can help write the next chapter. So I put all of my energy into delivering climate change solutions so that I erase doom from my future. 
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+One day five years ago I woke up. I decided to dedicate my professional life to mitigating the global warming crisis we seem to be headed to. I actively seeked, found and worked on social and environmental projects which my hot A.I. and data science skills can help multiply impact of. I spent a couple of happy years consulting for such projects.
 
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Thiago Rossener</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
+Come 2017. I bought a tent. I love camping - and the smell of grass and trees and the roar of the ocean which come with it. Then fire was all around. Unfortunately the 2017 wildfire seasons was the most devastating one Portugal has seen. Being from Bulgaria, where the climate rarely allows for perfect wildfire conditions, I suddently started being bombarded by news of wildfires - week after week after week. The news described the loses a little too well. This is the year I started paying attention to wildfire news - Portugal and California in 2017; Sweden (above the Arctic cycle - which is very North!), Greenland and California again in 2018; Alaska, Russia and AUSTRALIA last year. A new natural phenomenom has emerged - megafires. These are wildfires, which fueled by climate change, rage uncontrolably for weeks, sometimes for more than a month, and spit out fumes to suffocate even the neighbouring countries and travel across seas.
 
-Most of these elements are styled by browsers with few modifications on our part.
+Megafires have to be prevented, I thought. I did a bit of self-reflection - my calling is to help impact projects however I can. Then a "but" crept in my mind. "But how much change do we make by delivering quality education now if we would have to turn farmers in 30 years?" This is what happens in the movie Interstellar. "But why would we want to detect cancer in its early stages using A.I. when we would not have a planet to live on and would choke on poisonous air?". Many more similar questions formed into my mind, until I decided that for me the most pressing global problem we have nowadays is man-made climate change.
 
-# Heading 1
+> We, humas, are animals. Shelter is one of the most basic needs of animals. Earth is our shelter so we better take good care of it.
 
-## Heading 2
+Then it all became clear. I am on a mission to fight climate change so I can give future to all of us and all of these impact projects which will make our lives better. I only need to make "fight climate change" an achievable collection of tasks and have a plan on how to execute these tasks. I have this plan now.
 
-### Heading 3
+Adult trees in forests are so far the best mechanism - natural or man-made - to sequester carbon dioxide (CO2) from the atmosphere. Wildfires destroy these trees. Even when a new tree is planted immediately after another one has burned, it takes ~ 20-25 years for it to grow to become as effective as the burned one in capturing CO2. Moral of the story - protect adult trees. How - by mitigating wildfires and preventing megafires. Migitating wildfires means preparing the natural world so that the natural disaster fire happens - it can be contained faster with smaller loss of trees. Good, now I can execute.     
 
-#### Heading 4
+## # Success
 
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+## # Horror
 
-## Code
+## # Drive
 
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
+## # Silver Lining
 
-```js
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
-```
-
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
-
-## Lists
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
-
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-## Images
-
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
-
-![placeholder](https://placehold.it/800x400 "Large example image")
-![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
-
-## Tables
-
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
