@@ -9,5 +9,5 @@ permalink: /about/
 
 # Who I am 
 
-My name is Ekaterina Stambolieva - and I am a female space tech founder, whose startup mitigates wildfires.
-I am both very technical with extensive experience in A.I. and data science, and business-savvy with 2 startups under my belt.
+My name is Ekaterina Stambolieva - and I am a serial impact entrepreneur, a female space tech founder, whose current startup mitigates wildfires.
+I am both very technical with extensive experience in A.I. and data science, and business-savvy.
