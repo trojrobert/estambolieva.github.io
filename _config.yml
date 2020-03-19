@@ -52,7 +52,7 @@ collections:
   authors:
     output: true
 paginate_path: "/page/:num/"
-show_get_theme_btn: true
+show_get_theme_btn: false
 use_logo: false
 
 # Content paginator
@@ -96,4 +96,4 @@ exclude: [
 ]
 
 # Theme
-version: v3.0.2
+version: v3.2
