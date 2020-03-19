@@ -6,11 +6,11 @@ subtitle: This is what happened to my startup project in its first 2 years of ex
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 image: https://images.unsplash.com/photo-1519669417670-68775a50919c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60
 <!-- optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559825288/theme17_nlndhx.jpg -->
-category: work
+category: startup
 tags:
   - startups
   - horror
-author: thiagorossener
+author: estambolieva
 ---
 
 Pen in hand and a white piece of paper in front of me, I find myself unable to start writing. I need to close my eyes, take a deep breath, exhale loudly through my moth so I can begin. 
