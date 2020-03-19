@@ -5,7 +5,7 @@ description: About page
 permalink: /about/
 ---
 
-<img class="img-rounded" src="/assets/img/uploads/profile.png" alt="Thiago Rossener" width="200">
+<img class="img-rounded" src="/assets/img/uploads/profile.jpg" alt="Ekaterina Stambolieva" width="200">
 
 # Who I am 
 
