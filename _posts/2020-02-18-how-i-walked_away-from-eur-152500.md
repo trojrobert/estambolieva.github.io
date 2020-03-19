@@ -1,5 +1,5 @@
 ---
-date: 2020-02-18 12:00:00
+date: 2020-03-18 12:00:00
 layout: post
 title: How I walked away from € 152 500
 subtitle: This is what happened to my startup project in its first 2 years of existence.
@@ -54,24 +54,58 @@ It was then when we discovered that in order to deliver the most effective techn
 
 - Here we added a third co-founder to our team - a Frenchman residing in Luxembourg who is married to one of my best friends there. I nickname him *Fr*. He was the one who told us about Fit4Start, and after I introduced him to *Br*, she liked him and called him a "business shark". We invited him to become part of the team and he accepted. 
 
-5. We got accepted into Fit4Start 8 programme in early 2019. This meant that our project would receive €50 000, and if we showed good progress during the 4-month acceleration programme, we had the opportunity to receive additional €100 000. This money was all equity-free.
+5. We got accepted into Fit4Start 8 programme in early 2019. This meant that our project would receive €50 000, and if we showed good progress during the 4-month acceleration programme, we had the opportunity to receive additional €100 000. This money was all equity-free. 
 
-*Br* and I resided in Portugal, and *Fr* was in Luxembourg. It was me who travelled all the time, back and forth - every two weeks - to Luxembourg to complete the acceleration programme. At the end, on my birthday, we presented our final pitch and were informed that we successfully graduate from the program. This was great news because it meant that we had one challenge left before we could receive the other €100 000. We had to raise €50 000 from private investors. 
+*Br* and I resided in Portugal, and *Fr* was in Luxembourg. It was me who travelled all the time, back and forth - every two weeks - to Luxembourg to complete the acceleration programme. At that time, I transfered the management of our Portuguese company to *Br* so that my constant business trips do not interrupt the daily business of the company. At the end, on my birthday, we presented our final pitch and were informed that we successfully graduate from the program. This was great news because it meant that we had one challenge left before we could receive the other €100 000. We had to raise €50 000 from private investors. We also had to create another company incorporated in Luxembourg in order to receive the Fit4Start grant money.
 
-In the meantime, we grew the team to 8 people, most of us residing in Portugal. I interviewed and chose all of them, and I was very happy with my choise. I used a [technique](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwi66u2lyKboAhWTwsQBHQQuC1sQFjAAegQIAxAB&url=https%3A%2F%2Fwww.businessinsider.com%2Fdaniel-kahneman-on-hiring-decisions-2013-1&usg=AOvVaw3X8vxkD1YrOrgvdXlbZdJx) developed by Daniel Kahnemann to guide me choose the best people for the job. I had been dreaming of applying it in real life for 3 years, and I succeeded in the summer of 2019.
+6. In mid 2019, we got accepted into the acceleration programme of Casa do Impacto in Lisbon, called Rise for Impact. We were especially excited about this one because this is an impact business accelerator, and not only a business-as-usual one.
 
-I spoke to two investors who were willing to invest in our project. This meant that from a small nothing we had grown a team, we had identified our market, and would have raised €250 000 with a small loss in equity. It felt like the hard work was starting to pay off, until ...
+In the meantime, we grew the team to 8 people, most of us residing and working in Portugal. I interviewed and chose all of them, and I was very happy with my choise. I used a [technique](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwi66u2lyKboAhWTwsQBHQQuC1sQFjAAegQIAxAB&url=https%3A%2F%2Fwww.businessinsider.com%2Fdaniel-kahneman-on-hiring-decisions-2013-1&usg=AOvVaw3X8vxkD1YrOrgvdXlbZdJx) developed by Daniel Kahnemann to guide me choose the best people for the job. I had been dreaming of applying it in real life for 3 years, and I succeeded in the summer of 2019.
+
+I secured our first client. I spoke to two investors who wanted to invest in our project. This meant that from a small nothing we had grown a team, we had identified our market, and would have raised €250 000 with a small loss in equity. It felt like the hard work was starting to pay off, until ...
 
 ## # Horror
 
+*Br* and *Fr* start arguing in August 2019. *Br* decided to quit the project and the two companies, which she has shares in. Her condition for leaving is that she receives €35 000 for her equity in the companies. This was the initial offer she made. There were more to follow. Until an agreement on the price of the shares and time of payment is made she wants to stay the manager of the Portuguese company. *Br* stops working altogether for us with the exception of her participation in Rise for Impact, for which she is paid for. We had made the commitment to the programme that she will be the team member to represent the project.
+
+I do my best to deescalate the conflict.
+
+The Portuguese company received a €50 000 grant from ESA. The Luxebourgish company received a €50 000 (+€100 000) grant fro Fit4Start.
+
+*Fr* gets tired of arguing in October 2019. He expressed the intention of shutting the Luxembourgish company down, and sharing the profits we made, thanks to our participation in Fit4Start. *Br* was short on cash and agreeed with him. Grant money is, however, not profits. I explained this to them, and after that I received another proposal - that the grant money is used to pay salaries to the founders before the company is shut down. I do not agree to this as 2 out of the 3 founders are not working for the company anymore, therefore salaries should not be paid to them. I refused to be part of any endeavour which might be considered a financial fraud with people whose interest is the money.
+
+After more discussions, I agree to buy their shares in the Luxembourgish company at a 66% higher price. The pressure rises as I have been working for freee, fully deveted to the project, for quite some time. Buying their shares will put me in an unpleasant financial situation, but I am willing to do this. 
+
+Some managerial decisions and actions on how to use the capital in the Luxembourghish company are made, which meant money was spent where is could have been saved. A threat to leave the managerial position unfilled in the Luxembourgish company had been repeated a couple of times to me over the course of several weeks. It was not possible for me to immediatelly assume the position of the manager of the company due to residency restraints, which would take about a month to get resolved. 
+
+At this point my time would be spent mostly in managing this difficult situation and not where it was needed the most - managing the team, both technically and from a business perspective, setting and executing the strategy and signing clients.
+
+The difficult decision to put a stop to the madness which was happening in Luxembourg was made by me at the end of 2019. We would not ask for the grant and close the company. **Thus I walked away from €150 000 which I have raised.**
+
+In parrale to this, *Br* had been an absent manager of the Portuguese company for half an year. My personal money would go to pay for her social security contributions because I knew that if I let the company go into debt to the government, we would be able to neither raise money nor sign clients. In the meantime, *Br* took a 2-month full-time UX/UI [Ironhach](https://www.ironhack.com/en) course, went to Brazil and did not take any action in stepping down from being the Portuguese company manager as I had requested. 
+
+In January 2020, the Portuguese company was still to receive €12 500 from the ESA grant. it was this month that I took the decision to stop holding the company together while not employed by it, not being its manager, and having done this at a personal cost for so long. **Thus I walked away from €12 500 more.**
+
+
+## # Aftermath
+
+I could not extend the contract of one of our most valuable employees. We had secured money for this salary at least for the next 9 months. I had finally raised enough money to start getting paid for the work I do for this startup for the last 2 years. This money is not accessible to the startup anymore.
+
+We had worked hard to raise €200 000 equity-free money only to see most of it never appear.
 
 
 ## # Drive
 
-I find myself unable to stop thinking on how to develop this project into a sustainable impact business. I have spent hours contemplating leaving the project for the short-term gain of better income and not worrying those who love. Yet, this is not the right decision for me. I will give beyond my best to make helping mitigating wildfires on a global level work, and work as of 2020. This decision is what really brings peace to me, and I will channel this calm to making it happen, with a little help from my friends. 
+I find myself unable to stop thinking on how to develop this project into a sustainable impact business. I have spent hours contemplating leaving the project for the short-term gain of **income** and not worrying those who love. Yet, this is not the right decision for me and I am certain of it. I will give beyond my best to make helping mitigating wildfires on a global level work, and work in 2020. This decision is what really brings peace to me, and I will channel this calm to making it happen, *with a little help from my friends.*
 
 ## # Silver Lining
 
-I choose to accept the roallercoaster of the last two year as a valuable business lesson which showed me paths that do not lead to success. I am positive that this lesson will only help me in the future to build, grow and expand impact businesses. 
+I accept the roallercoaster of the last two year as a valuable business lesson which showed me paths that do not lead to success. I am positive that this lesson will only help me in the future to build, grow and expand impact businesses. 
 
-I would like to extend a "Thank you" to all people involved in this story for allowing me to learn and grow as a person. Now let's go do some awesome work. 
+In hindsight, the horror story I described just now pales in comparison to some other business stories I came to know about. 
+
+## # Thank you
+
+I would like to extend a "Thank you" to all people involved in this story for allowing me to learn and grow as a person. Now let's go do some awesome work.
+
+I am extremely grateful to those who were with me during the hard times in Q4 of 2019 and he beginning of 2020. Thank you for listening to me, for reaching ou a helping hand, for conversing with me, for keeping me together, for your kind words and hugs, for advising and warning me, for sharing other horrific startup stories with me, for texting me to see if everything is okay - but most importantly - for answeing your phone.
