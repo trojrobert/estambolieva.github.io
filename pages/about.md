@@ -17,7 +17,7 @@ I am a swiss-army knife, and in 2019 I was the only woman in Portugal who lead a
 
 ### My works in the media
 
-Find all links and citations [here]().
+Find all links and citations [here](http://katstam.com/i-in-the-media/).
 
 ### Leadership
 
