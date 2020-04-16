@@ -17,12 +17,7 @@ I am a swiss-army knife, and in 2019 I was the only woman in Portugal who lead a
 
 ### My works in the media
 
-I have worked on a diverse set of consulting projects - some covered by the media in the U.K, Luxembourg, Portugal and Bulgaria. One of those projects is showcased in my profile under Other Projects.
-
-* My work as a consultant to Amnesty International to build a classified to detect online abuse against female members of the U.K. parliament: [here](https://medium.com/@AmnestyInsights/unsocial-media-tracking-twitter-abuse-against-women-mps-fc28aeca498a), and [here](https://www.amnesty.org/en/latest/research/2018/03/online-violence-against-women-chapter-1/) with the methodology is published [here](https://drive.google.com/file/d/0B3bg_SJKE9GOenpaekZ4eXRBWk0/view).
-
-* My work on my space tech startup covered in different online newspapers: [Nina Space Prevents Wildfires By Analyzing Satellite Images](https://www.siliconluxembourg.lu/nina-space-prevents-wildfires-by-analyzing-satellite-images/) in English, [Firefly helps prevent and mitigate wildfires](https://www.dinheirovivo.pt/fazedores/firefly-ajudar-a-prevenir-incendios-a-partir-do-espaco/) in Portuguese - this made it to the front page of the Saturday print, [our problem with wildfires](https://pontosdevista.pt/2019/01/02/problema-incendios-florestais/) in Portuguese, [A Brazilian and  a Bulgarian lady enter a bar, and a space tech startup is born](https://www.tsf.pt/portugal/sociedade/uma-brasileira-e-uma-bulgara-entram-num-bar-sai-startup-que-previne-fogos-a-partir-do-espaco-11373989.html) in Portuguese, and on the radio for the radio show [It is done this way](https://www.rtp.pt/play/p6403/e452156/isto-faz-se-por-ca) - again in Portuguese.
-
+Find all links and citations [here]().
 
 ### Leadership
 

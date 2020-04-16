@@ -1,5 +1,5 @@
 ---
-date: 2020-03-25 13:17:00
+date: 2020-04-15 13:17:00
 layout: post
 title: Linear Regression Tips and Tricks
 subtitle:
