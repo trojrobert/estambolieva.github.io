@@ -39,7 +39,7 @@ location         category
 age              int64
 interest         float64
 interest rate    object
-year             category
+year             period[M]
 
 ```
 
@@ -49,12 +49,12 @@ year             category
 ```python
 # b. get the names of the numeric anc categorical columns
 numeric_features = X_train.select_dtypes(include=['int64', 'float64']).columns
-categorical_features = X_train.select_dtypes(include=['object', 'category']).columns
+categorical_features = X_train.select_dtypes(include=['object', 'category', 'period[M]']).columns
 ```
 
 3. Then I need to encore the categorical valiables - and I choose [OneHotEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html) to do this. OneHotEncoder works beautifully - here it goes:
 
-Let's imagine a very simplistic scenario. Let's say that I have data only for houses purchased in 2017, 2018 and 2019. I have chosen to treat the variable *year* as categorical instead of numerical. Let's also assume that I have data for only 5 houses. The values of the variable *year* would look something like this:
+Let's imagine a very simplistic scenario. Let's say that I have data only for houses purchased in 2017, 2018 and 2019. I have chosen to treat the variable *year* as a datetime type instead of numerical. Let's also assume that I have data for only 5 houses. The values of the variable *year* would look something like this:
 
 ```python
 [In]: X_train.year
@@ -127,11 +127,43 @@ Perfect, I now have a trained Linear Regression model, which I'd like to see fea
 
 ### Feature Importance in Pipelines: Problem
 
+Usually, I would get the `coef_` of a scikit-learn trained model, which will give me the weights for each of the features (variables or columns). The problem here is that OneHotEncoder creates new features, as shown above. I am not aware of what the names of these features is and which of the weights of `coef_` corresponds to each of the new feature set. 
 
+This cannot be right as a data scientist I must know which features and important for the model, and find out which features can be dropped from the training as they bring little information.
 
 ### Feature Importance in Pipelines: Solution
 
+1. Get OneHotEncoder column names using `named_steps` of the training pipeline
 
+As you see above, I have named the OneHotEncoding step as *one_hot*, the Linear Regression training step and *classifier*. `named_steps` allows me to get only one of all pipeline steps and inspect it alone. What I want to do first is to get the names of the columns which were created during OneHotEncoding.
+
+To do this, I need to get to the *preprocessor* step, call the categorical transformer, which I have titled *cat*, get the OneHotEncoder step *one_hot*
+
+```python3
+[In]: onehot_columns = list(clf.named_steps['preprocessor'].named_transformers_['cat'].named_steps['one_hot'].get_feature_names(input_features=categorical_features))
+
+[Out]:
+['year_2017', 'year_2018', 'year_2019', 'location_USA', ...., 'location_Brazil']
+```
+
+2. Join the lists of the numerical column names and the OneHotEncoder column names
+
+```python3
+numeric_features_list = list(numeric_features)
+numeric_features_list.extend(onehot_columns)
+```
+
+3. Use the magic library [ELI5](https://eli5.readthedocs.io/) (or 'explain like I’m 5')
+
+```python3
+eli5.explain_weights(clf.named_steps['classifier'], top=50, feature_names=numeric_features_list, feature_filter=lambda x: x != '<BIAS>')
+```
+
+The a very beautiful list with the weight + column name is printed to show feature importance - all positive weights are in green, while the negative weights are visualized in red. 
+
+Here is a sample output of `eli5.explain_weights`:
+
+![Sample output](https://miro.medium.com/max/550/1*KkcCm7-mxrFk-d5muOUTdQ.png)
 
 ### Ralted Posts:
 
