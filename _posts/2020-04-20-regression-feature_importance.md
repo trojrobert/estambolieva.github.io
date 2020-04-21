@@ -4,7 +4,7 @@ layout: post
 title: Feature Importance with OneHotEncoder and Pipelines in Scikit-learn
 subtitle:
 description: 
-image: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Linear_regression.svg/400px-Linear_regression.svg.png
+image: https://images.unsplash.com/photo-1414322058660-a4c56ab6c1e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
 <!-- optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559825288/theme17_nlndhx.jpg -->
 category: ml
 tags:
@@ -17,15 +17,11 @@ tags:
 author: estambolieva
 ---
 
-I recently played around with linear regression and scikit-learn. 
-
-I discovered how to use pipelines to stream-line the model training process, and now I quite like using Pipelines. I could not, however, discover how to see the most important features for the models trained when I have used a pipeline. Let me first explain how the pipelines work, and then I will tell you what prevented me from easily seeing the most important features.
+I started using pipelines to stream-line machine learning model training process, and now I quite like using Pipelines. It tooks more a couple of hours, however, to discover how to see the most important features for the models trained when I have used a pipeline. Let me first explain how the pipelines work, and then I will show how to easily see the most important features.
 
 ### Training Pipelines
 
-Here is how a training pipeline looks like:
-
-1. First I want to understand what type of variables are held in each variable (a dataframe column) - numeric, continuous, categorical or boolean. For a description of the problem I have chosen - read [here](http://katstam.com/regression-tips/#intro).
+1. First I want to understand what type of variables are held in each dataframe column - numeric, continuous, categorical or boolean. Here I am exploring a house price dataset with variables *house price*, *location*, *age*, *interest*, *interest rate*, *year*. For a description of the problem I have chosen - read [here](http://katstam.com/regression-tips/#intro).
 
 ```python
 X_train # training dataframe
@@ -52,7 +48,9 @@ numeric_features = X_train.select_dtypes(include=['int64', 'float64']).columns
 categorical_features = X_train.select_dtypes(include=['object', 'category', 'period[M]']).columns
 ```
 
-3. Then I need to encore the categorical valiables - and I choose [OneHotEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html) to do this. OneHotEncoder works beautifully - here it goes:
+Here is how my training pipelines looks like:
+
+3. I to encore the categorical valiables - and I choose [OneHotEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html) to do this.
 
 Let's imagine a very simplistic scenario. Let's say that I have data only for houses purchased in 2017, 2018 and 2019. I have chosen to treat the variable *year* as a datetime type instead of numerical. Let's also assume that I have data for only 5 houses. The values of the variable *year* would look something like this:
 
@@ -83,7 +81,7 @@ index    year    year_2017    year_2018    year_2019
 ```
 
 Let's finally apply OneHotEncoder to the data set, while imputing (or filling) missing values. Because I will do 2 things here already - encoding and imputing, I will do these using a pipeline.
-*Note*: Scikit-learn does not allow for datasets to have missing values - and if they do, throws an error during training.
+*Note*: Scikit-learn does not allow training with datasets, which have missing values - and if they do, an error is thrown during training.
 
 ```python
 # import the needed libraries first
@@ -116,20 +114,21 @@ preprocessor = ColumnTransformer(
     ])
 ```
 
-4. Train a Linear Regression (or a model of your choise) using a pipeline
+4. Train a Linear Regression (or a model of your choise) using a pipeline with a preprocessing step, and a classification step.
 
 ```python
 clf = Pipeline(steps=[('preprocessor', preprocessor),
                       ('classifier', LinearRegression())])
 ```
 
-Perfect, I now have a trained Linear Regression model, which I'd like to see feature important for. This is how it is done :).
+Perfect, I now have a trained Linear Regression model, which I'd like to see feature important for.
+
 
 ### Feature Importance in Pipelines: Problem
 
-Usually, I would get the `coef_` of a scikit-learn trained model, which will give me the weights for each of the features (variables or columns). The problem here is that OneHotEncoder creates new features, as shown above. I am not aware of what the names of these features is and which of the weights of `coef_` corresponds to each of the new feature set. 
+Usually, I would get the `coef_` of a scikit-learn trained model, which will give me the weights for each of the features (variables or columns). The problem here is that OneHotEncoder creates new features, as shown above when discussing OneHotEncoder. I am not aware of what the names of these features are and which of the weights of `coef_` corresponds to each of the new features. 
 
-This cannot be right as a data scientist I must know which features and important for the model, and find out which features can be dropped from the training as they bring little information.
+This cannot be right as a data scientist I must know which features and important for the model.
 
 ### Feature Importance in Pipelines: Solution
 
@@ -137,7 +136,7 @@ This cannot be right as a data scientist I must know which features and importan
 
 As you see above, I have named the OneHotEncoding step as *one_hot*, the Linear Regression training step and *classifier*. `named_steps` allows me to get only one of all pipeline steps and inspect it alone. What I want to do first is to get the names of the columns which were created during OneHotEncoding.
 
-To do this, I need to get to the *preprocessor* step, call the categorical transformer, which I have titled *cat*, get the OneHotEncoder step *one_hot*
+To do this, I need to get to the *preprocessor* step, call the categorical transformer *cat*, and get the OneHotEncoder step *one_hot*
 
 ```python3
 [In]: onehot_columns = list(clf.named_steps['preprocessor'].named_transformers_['cat'].named_steps['one_hot'].get_feature_names(input_features=categorical_features))
@@ -159,7 +158,7 @@ numeric_features_list.extend(onehot_columns)
 eli5.explain_weights(clf.named_steps['classifier'], top=50, feature_names=numeric_features_list, feature_filter=lambda x: x != '<BIAS>')
 ```
 
-The a very beautiful list with the weight + column name is printed to show feature importance - all positive weights are in green, while the negative weights are visualized in red. 
+The output is a very beautiful list with the weight + column name is printed to show feature importance - all positive weights are in green, while the negative weights are visualized in red. 
 
 Here is a sample output of `eli5.explain_weights`:
 
