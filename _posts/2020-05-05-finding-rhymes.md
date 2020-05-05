@@ -1,7 +1,7 @@
 ---
 date: 2020-05-04 11:39:00
 layout: post
-title: Using AI to generate a poem
+title: How to find rhyming poem lines
 subtitle:
 description: 
 image: https://images.unsplash.com/photo-1518805672493-adcd9abdc9e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80
@@ -19,14 +19,14 @@ Read more about the backstory of this project and its dream [here](http://katsta
 **tldr;**
 I participated in one of the projects of [Open Taggle](http://opentaggle.com/) - to use A.I. to generate a poem from a person's feelings. The feelings are captured using IoT to read EGG waves. I come in this project as the person to develop the A.I. algorithm to generate the poems. 
 
-### Data
+### Poem Data
 
 The data we use is a scrapped list from the Poetry Foundry's website available for [download](https://www.kaggle.com/tgdivy/poetry-foundation-poems) on Kaggle.
 
 When loaded into a pandas dataframe looks something like this:
 ![Raw Poetry Foundry Data](https://raw.githubusercontent.com/estambolieva/estambolieva.github.io/master/assets/img/uploads/KagglePoetryFoundry.png)
 
-The data was clean (read more about some cleaning done [here](http://katstam.com/text-cleaning-in-pandas/)) and all poem lines were separates and inserted into a new row.
+The data was cleaned (read more about some cleaning done [here](http://katstam.com/text-cleaning-in-pandas/)) and all poem lines were separates and inserted into a new row.
 
 ![Raw and Clean Poetry Foundry Data](https://raw.githubusercontent.com/estambolieva/estambolieva.github.io/master/assets/img/uploads/KagglePoetryFoundry_cleaned.png)
 
@@ -45,7 +45,7 @@ We decided to make a new column called *Rhyme_Categories*. In this column - a su
 The `pronouncing` library in Python allows for an easy check on all the rhymes a single word has.
 
 ```python
-[In]: pronouncing..rhymes('map')
+[In]: pronouncing.rhymes('map')
 
 [Out]:
  ['app',
@@ -80,14 +80,20 @@ The problem here is that to map all rhyming lines to a single one it took 9.4 se
 
 #### Good Solution to finding rhymes
 
-Let's flex our computer science brains and device a computer science algorithm to do this. Sure, it might not be a neat column-wise operations. What we want is something which runs very fast.
+Let's flex our computer science brains and device a computer science algorithm to find which line rhyme with which other lines. It might not be a neat column-wise operations - but it would run very fast.
+
 
 Here is how the solution looks like:
 a. we iterate over each single last word in the dataframe (it takes 25 ms on average per word)
+
 b. for each last word, we return the list of all possible rhymes to it (it takes about 15 ms per word)
-c. add each of these rhyming words to a dictionary. The rhyming word in the key, and the last word it rhymes to is the value. This last word then becomes the rhyming category. (it takes 37 ns to add a new element to the dictionary)
-d. do not add this rhyming word if it already exists as a key in the dictionary
-e. make the dictionary into a separate column titled *Rhyming_Categories*
+
+c. we add each of these rhyming words to a dictionary. The rhyming word is the key, and the last word it rhymes with is the value. The current last word then becomes the rhyming category. (it takes 37 ns to add a new element to the dictionary)
+
+d. we do not add this rhyming word if it already exists as a key in the dictionary
+
+e. we make the dictionary into a separate column titled *Rhyming_Categories*
+
 
 Let's expand this. Say that the first last word in the column *Last_Word* is *map*. Let's also imagine that the rhyming words `pronouncing` returns are only 3 - *cap*, *tap* and *slap*. What gets added to the originally empty dictionary is the following
 
@@ -134,12 +140,12 @@ for last_word in df.Last_Word:
 df['Rhyme_Categories'] = df.Last_Word.map(word_rhymecategory_dict)
 ```
 
+To find all the lines, which rhyme with the first line that ends with the word *map*, we simply need to slice the dataframe
+
+```python
+df[df.Rhyming_Categories == 'map']
+```
+
 ### Related Posts
 * [Using AI to generate a poem](http://katstam.com/ai-poem-generation/)
-* [FText Cleaning in Pandas](http://katstam.com/text-cleaning-in-pandas/)
-
-### Reading
-
-I find these articles very useful:
-
-
+* [Text Cleaning in Pandas](http://katstam.com/text-cleaning-in-pandas/)

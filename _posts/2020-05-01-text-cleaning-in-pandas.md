@@ -1,7 +1,7 @@
 ---
 date: 2020-05-01 11:39:00
 layout: post
-title: Using AI to generate a poem
+title: Text Cleaning in Pandas
 subtitle:
 description: 
 image: https://images.unsplash.com/photo-1576269483449-3b694997b362?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
@@ -19,18 +19,18 @@ Read more about the backstory of this project and its dream [here](http://katsta
 **tldr;**
 I participated in one of the projects of [Open Taggle](http://opentaggle.com/) - to use A.I. to generate a poem from a person's feelings. The feelings are captured using IoT to read EGG waves. I come in this project as the person to develop the A.I. algorithm to generate the poems. 
 
-### Data
+### Poem Data
 
 The data we use is a scrapped list from the Poetry Foundry's website available for [download](https://www.kaggle.com/tgdivy/poetry-foundation-poems) on Kaggle.
 
 When loaded into a pandas dataframe looks something like this:
 ![Raw Poetry Foundry Data](https://raw.githubusercontent.com/estambolieva/estambolieva.github.io/master/assets/img/uploads/KagglePoetryFoundry.png)
 
-Here are some smart ways to clean the poem's textual data in python:
-1. [Removing opening and trailing unwanted characters for all rows in a column](http://katstam.com/text-cleaning-in-pandas/#removing-opening-and-trailing-unwanted-characters-for-all-rows-in-a-column)
-2. [Removing duplciates](http://katstam.com/text-cleaning-in-pandas/#removing-duplciates)
-3. [Split a column into multiple columns](http://katstam.com/text-cleaning-in-pandas/) _____
-4. [Remove non-ascii characters from text in columns](http://katstam.com/text-cleaning-in-pandas/)
+Here is what I cover in this post:
+1. [Removing opening and trailing unwanted characters for all rows in a column](http://katstam.com/text-cleaning-in-pandas/#1-removing-opening-and-trailing-unwanted-characters-for-all-rows-in-a-column)
+2. [Removing duplciates](http://katstam.com/text-cleaning-in-pandas/#2-removing-duplciates)
+3. [Split a row value with multiple new lines in it into different rows](http://katstam.com/text-cleaning-in-pandas/#3-split-a-column-into-multiple-columns)
+4. [Remove non-ascii characters from text in columns](http://katstam.com/text-cleaning-in-pandas/#4-remove-non-ascii-characters)
 
 #### 1. Removing opening and trailing unwanted characters for all rows in a column
 
@@ -116,6 +116,10 @@ lines.index = lines.index.droplevel(-1)
 lines.name = 'Lines'
 df = df.join(lines)
 ```
+
+This is how the dataset looks like with the lines printed into new rows:
+
+![Raw and Clean Poetry Foundry Data](https://raw.githubusercontent.com/estambolieva/estambolieva.github.io/master/assets/img/uploads/KagglePoetryFoundry_cleaned.png)
 
 #### 4. Remove non-ascii characters
 
