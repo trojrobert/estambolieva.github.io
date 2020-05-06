@@ -1,7 +1,7 @@
 ---
 date: 2020-05-05 11:15:00
 layout: post
-title: Predict: how many days before a house is sold
+title: Predict how many days before a house is sold
 subtitle:
 description: 
 image: https://images.unsplash.com/photo-1571512050766-0ff3b842dca0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
