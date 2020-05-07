@@ -16,27 +16,28 @@ author: estambolieva
 
 I discovered something interesting today while unit testing my Python code. 
 
-**It seems that a boolean, call it *var1* variable passes the `isinstance(*var1*, int)`**.
+**It seems that a boolean, call it *var1* variable passes the `isinstance(*var1*, int)`** check.
 
 I was summing some numbers and at some point realized that the code could sum numbers (int variables) and boolean variables. This was problematic for me and it should not have happened. It appears that Javascript does exactly the same, while Ruby fails with an error.
 
 
 ### Technically Speaking
 
-`isinstance(*var1*, int)` returns `True` for every value of *var1* which is an integer. It was counterintuitive for me to see it return `True` when the value of *var1* is NOT an integer but a boolean. Python's syntax is very intuitive and lacks the complexity of programming languages such as Java. This is why I love Python for.
+`isinstance(*var1*, int)` returns `True` for every value of *var1* which is an integer. It was counterintuitive for me to see it return `True` when the value of *var1* is NOT an integer but a boolean. Python's syntax is very intuitive and lacks the complexity of programming languages such as Java. This is why I love Python for. There is no need for declaring the type of the variable - as the type of the variable is based on its current value.
 
-In pandas, when working with datasets loaded into matrices, I am used to understanding how many missing values there are by simply summing all the missing values. This should have been a hint as I was getting the count of the missing values in a column of the dataset by summing all the values `True` where a cell is empty - e.g. there is a missing value. So to put it bluntly, the sum of many `Trues` would return an integer number to me.
+Interestingly, when working with datasets loaded into matrices in pandas, I count how many missing values there are by simply summing all the missing values. This should have been a hint as I was getting the count of the missing values in a column of the dataset by summing all the values `True` (True when a cell is empty - e.g. there is a missing value, and Flase - otherwise). In these cases, the sum of many `Trues` would return an integer number to me. Uh oh...
 
 This got me thinking that: 
 
 > A good way to avoid such misunderstandings is to have solid coverage of your code by unit tests.
 
+This is something I apparently did not have since my code added a boolean to an integer. Let me explain briefly how unit testing works and how to strive to make is more complete over time.
 
 ### Unit Testing
 
 This is a quick **and** more detailed introduction to unit testing than what tutorials you see on the Internet (one of which is in the *Further Reading* section below).
 
-I use the commonly-known library `unittest`. 
+In Python, I use the commonly-known library `unittest`. 
 
 **1. Setup**
 
@@ -44,7 +45,7 @@ This is how my setup and file structure look like:
 
 ![File Structure](https://raw.githubusercontent.com/estambolieva/estambolieva.github.io/master/assets/img/uploads/unit-test-file-structure.png)
 
-I have all of my code in the `src` folder, and all of my unit tests in the `test` folder. A file `__init__.py` exists in both folders as I would like Python to see then as module and import functions from the *.py* file contained within these modules. 
+I have all of my code in the `src` folder, and all of my unit tests in the `test` folder. A file `__init__.py` exists in both folders as I would like Python to see them as modules and import functions from the *.py* file contained within these modules. 
 
 **2. The code to be tested**
 
@@ -64,7 +65,7 @@ I store it in the `sum.py` file.
 
 **3. The tests**
 
-This is how `testsum.py` looks like:
+This is how `test_sum.py` looks like:
 
 ```python
 import unittest
@@ -105,11 +106,11 @@ import sys
 sys.path.append('../')
 ```
 
-**What else**
+**What else?**
 
 The current unit test setting is the following that it does not check for any cases when either of the variables to sum are not integers. Let's add 3 more tests to cover these cases: the first variable is an integer and the second one is not, the second variables in an integer and the first variable is not, and finally - both varialbes are not integers.
 
-```python3
+```python
 import unittest
 import sys
 sys.path.append('../')
@@ -157,8 +158,7 @@ Ran 5 tests in 0.000s
 
 ```
 
-As we can see `test_sum_4` failed as Python returned 6 instead of *None* which is what I expected.
-To fix this issue the original `sum_two_integers` function is changed as follows:
+As we can see `test_sum_4` failed as Python returned 6 instead of *None*. To fix this issue the original `sum_two_integers` function is changed as follows:
 
 ```python
 def sum_two_integers(i, j):
@@ -178,6 +178,10 @@ Ran 5 tests in 0.000s
 OK
 
 ```
+
+### Going further
+
+It makes a lot of sense to use unit testing in your big coding projects - which is also test-driven development. It is a great habit to have and can hep you deliver production-ready code to amaze the world.
 
 ### Reading
 
