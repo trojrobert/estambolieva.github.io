@@ -20,8 +20,8 @@ I wanted to share how you, as a busy professional, can schedule your week and do
 **Talks**
 
 
-1. Podcast recording with Mısra Turp on the topic of *'So you want to be a data scientist?'*
-2. My participation in the panel talks for STEM Zone Nigeria on the topic of *'World changing tides: Artificial intelligence and other emerging technologies'* - thanks Temitope Bolaji Adeniyi for the invitation
+1. Podcast recording with Mısra Turp on the topic of *'[So you want to be a data scientist?](https://www.soyouwanttobeadatascientist.com/)'*
+2. My participation in the panel talks for [STEM Zone Nigeria](https://stemzoneng.com/) on the topic of *'World changing tides: Artificial intelligence and other emerging technologies'* - thanks Temitope Bolaji Adeniyi for the invitation
 
 ![STEM Zone Nigeria Conference](https://github.com/estambolieva/estambolieva.github.io/blob/master/assets/img/uploads/my_week/STEM_ZONE_Nigeria.jpg)
 
@@ -31,7 +31,7 @@ I wanted to share how you, as a busy professional, can schedule your week and do
 **Learning Time**
 
 
-1. Women 4 Climate Lisbon Bootcamp supported by its partnets Startup Lisboa and Casa do Impacto.
+1. Women 4 Climate Lisbon Bootcamp supported by its partnets [Startup Lisboa](https://www.startuplisboa.com/) and [Casa do Impacto](http://mais.scml.pt/casadoimpacto/).
 
 Women4Climate initiative is an initiative organized by [C40](https://www.c40.org/). Around the world, C40 cities are taking bold climate action, leadning the way towards a healthier and more sustainable future.  
 
