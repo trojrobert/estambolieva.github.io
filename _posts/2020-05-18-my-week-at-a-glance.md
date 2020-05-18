@@ -1,7 +1,7 @@
 ---
 date: 2020-05-18 10:0:00
 layout: post
-title: My week: how I work only on what matters
+title: My week - how I work only on what matters
 subtitle:
 description: 
 image: https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80
