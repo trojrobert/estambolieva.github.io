@@ -1,10 +1,10 @@
 ---
-date: 2020-04-16 21:17:00
+date: 2020-04-24 21:17:00
 layout: post
 title: I speaking
 subtitle:
 description: 
-image: https://images.unsplash.com/photo-1560523159-6b681a1e1852?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
+image: https://github.com/estambolieva/estambolieva.github.io/blob/master/assets/img/uploads/I_speaking/Katia_New_Space.png
 category: portfolio
 tags:
   - machine learning
