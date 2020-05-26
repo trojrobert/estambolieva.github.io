@@ -4,7 +4,7 @@ layout: post
 title: Postgress Connection Pool with Gunicorn and Connexion
 subtitle:
 description: 
-image: https://unsplash.com/photos/ImcUkZ72oUs
+image: https://images.unsplash.com/photo-1534224039826-c7a0eda0e6b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
 category: programming
 tags:
   - python
