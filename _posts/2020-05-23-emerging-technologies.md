@@ -1,5 +1,5 @@
 ---
-date: 2020-05-18 10:0:00
+date: 2020-05-23 10:0:00
 layout: post
 title: Emerging technologies and emerging problems
 subtitle:
@@ -16,12 +16,12 @@ author: estambolieva
 
 [this is still work in progress...]
 
-Africa always fills my heart with wonder and adventure. Ut gives it a little twingle as I see the vast pool of opportunities it offers. 
+Africa always fills my heart with wonder and adventure. It gives it a little twingle as I see the vast pool of opportunities it offers. 
 
 ![I for STEM Zone Nigeria](https://github.com/estambolieva/estambolieva.github.io/blob/master/assets/img/uploads/my_week/I_for_STEM_Nigeria.jpg)
 
 
-This is why it was a pleasure of going live on Instagram for [STEM Zone Nigeria](https://stemzoneng.com/) yesterday after an invitation by the fearless Temitope Bolaji Adeniyi. I was supposed to talk about *'World changing tides: Artificial intelligence and other emerging technologies'* but we covered much more. Here is the gist of our 1-hour conversation. 
+This is why it was a pleasure of going live on Instagram for [STEM Zone Nigeria](https://stemzoneng.com/) yesterday after an invitation by the fearless Temitope Bolaji Adeniyi. I was supposed to talk about *'World changing tides: Artificial intelligence and other emerging technologies'* but we covered much more than that. Here is the gist of our 1-hour conversation. 
 
 #### Emerging Problems
 
@@ -29,11 +29,11 @@ I see a trend on my LinkedIn feed in the interests of my fellow data scientists 
 
 I always like to go one step further.
 
-> I shifted from learning a new technology because it has become popular and I need to keep my tech skills on the top of my game so I can compete on the job market to I need to learn new skills because I need it to solve the problems I want to solve. 
+> I shifted from learning a new technology because it has become popular and I needed to keep my tech skills on the top of my game so I could compete on the job market to I needed to learn a new skill/or technology/ because I needed it to solve the problems I wanted to solve. 
 
 As a data scientist, I have chosen to dedicate my work mainly on using my valuable skills to help solve environmental and social challenges instead of chasing glory by working for one of the tech giants/fast-growings startups like many of my peers do. This means that I concentrate on the problem - and when the problem does not require deep learning for its solution, deep learning is simply not used. 
 
-I find that the most powerful way for us to stay on top of ou game is to concentrate on the problem - and there are many emerging problems which needs some assistance from technology in order to be solved. Let me list a couple of examples. 
+I find that the most powerful way for us to stay on top of our game is to concentrate on the problem - and there are many emerging problems which needs some assistance from technology in order to be solved. Let me list a couple of examples. 
 
 Satellite image analysis, a.k.a data science, is used all around the world to increase crop yield, protect vulnerable populations from natural disasters, evaluate the environemtal damages of oil spills, and combat wildfires. Sensors are used to find our pets when they get lost, and to protect women and kids from physical violence or being kidnapped - [read more here](https://revolar.com/). A.I. is being used to fight male infertility - [read here](https://www.globaltimes.cn/content/1154483.shtml), and many many more.
 
