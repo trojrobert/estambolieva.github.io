@@ -19,6 +19,10 @@ I am a swiss-army knife, and in 2019 I was the only woman in Portugal who lead a
 
 Find all links and citations [here](http://katstam.com/i-in-the-media/).
 
+### My speaking engagements
+
+Find all links and short descriptions of my most recent presentations [here](http://katstam.com/I-speaking/).
+
 ### Leadership
 
 I lead a Data Science meeting which has more than 1000 members. 
