@@ -4,7 +4,7 @@ layout: post
 title: I speaking
 subtitle:
 description: 
-image: https://github.com/estambolieva/estambolieva.github.io/blob/master/assets/img/uploads/I_speaking/Katia_New_Space.png
+image: https://raw.githubusercontent.com/estambolieva/estambolieva.github.io/master/assets/img/uploads/I_speaking/Katia_New_Space.png
 category: portfolio
 tags:
   - machine learning
