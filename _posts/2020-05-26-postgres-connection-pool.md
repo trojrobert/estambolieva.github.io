@@ -131,7 +131,7 @@ SELECT * FROM pg_stat_activity;
 
 I executed this in [DBevaer Community](https://dbeaver.io/download/) at 10:39 on 27 May 2020. We can see 2 of the connections that DBevaer opened to the database as number 4 and number 5 in the screenshot below:
 
-![Connection Pool as seen on DBevaer](https://github.com/estambolieva/estambolieva.github.io/blob/master/assets/img/uploads/postgress_connection_pool/psql_conn_pool_example.png)
+![Connection Pool as seen on DBevaer](https://raw.githubusercontent.com/estambolieva/estambolieva.github.io/master/assets/img/uploads/postgress_connection_pool/psql_conn_pool_example.png)
 
 Then I ran my swagger API on locahlost at 10:41 which opened 4 connection as predicted for the connection pool. I use the command below to start the API from my terminal:
 
