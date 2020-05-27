@@ -48,7 +48,6 @@ This means that when we create the `application` in `wsgi.py` we also need to:
 * create a connection pool
 * make sure we put conditions to close the db connection - *tear down*
 * make the connection pool a global Flask variable
-* create a simple `\` endpoint in which the connection pool is initialized
 
 a. Read db name, URL, port and connection credentials from a `config.ini` file using `ConfigParser`
 
@@ -85,34 +84,14 @@ def close_conn(e):
         application.config['postgreSQL_pool'].putconn(db)
 ```
 
-d. Make the connection pool a global Flask variable under `g`
+d. Make the connection pool a global Flask variable under `g` - so it can be accessed by the controllers:
 
 ```python
 from flask import g
 
-def get_db():
-    print ('GETTING CONN')
-    if 'db' not in g:
-        g.db = application.config['postgreSQL_pool'].getconn()
-    return g.db
-```
-
-e. Create a simple `\` endpoint in which the connection pool is initialized
-
-```python
-from flask import jsonify
-
-@application.app.route('/')
-def index():
-    db = get_db()
-    cursor = db.cursor()
-
-    cursor.execute("select 1;")
-    result = cursor.fetchall()
-    print(result)
-
-    cursor.close()
-    return jsonify(result)
+@application.app.before_request
+def before_request():
+    g.db = application.app.config['postgreSQL_pool'].getconn()
 ```
 
 #### Putting it all together
@@ -120,7 +99,53 @@ def index():
 Find all the `wsgi.py` in thei gist on Github [here](https://gist.github.com/estambolieva/32cac557eb3fcf44ac968ed23be3157e). 
 
 
+#### Calling the conn from the Controllers
+
+In swagger, the controllers are in charge of defining what happens in every endpoint. Usually, all controllers are in the `controllers` directory, which is at the same level as the `models` and `swagger` directories. 
+
+To use the open database connections in the connection pool, we need to get this open connection from `g`.
+
+```python
+# base_controller.py
+from flask import g
+
+def get_from_db():
+	conn = g.db
+    cur = conn.cursor()
+
+    data= None
+    #ToDo: DO SOMETHING - usually retrieve data from the database using the cursor
+    cur.close()
+
+    return data
+```
+
+#### How does the connection pool look like
+
+
+I queried the open connections to the database to test how things would work out using this `psql` command:
+
+```sh
+SELECT * FROM pg_stat_activity;
+```
+
+I executed this in [DBevaer Community](https://dbeaver.io/download/) at 10:39 on 27 May 2020. We can see 2 of the connections that DBevaer opened to the database as number 4 and number 5 in the screenshot below:
+
+![Connection Pool as seen on DBevaer](https://github.com/estambolieva/estambolieva.github.io/blob/master/assets/img/uploads/postgress_connection_pool/psql_conn_pool_example.png)
+
+Then I ran my swagger API on locahlost at 10:41 which opened 4 connection as predicted for the connection pool. I use the command below to start the API from my terminal:
+
+```sh
+gunicorn "swagger_server.wsgi" -w 4 -b 0.0.0.0:8080
+```
+
+It created 4 db connections for the connection pool, listed in line number 6 to 9 - see starting time in the column titled *backend_start*. 
+
+Then I called the *base_controller.py* 8 times - and I could see that the connections were kept open from 10:41 while executing at the different times I called the controller - at 10:46 and 10:47 - see column *query_start* in the screenshot.
+
 
 #### Further Reading
 
 a. this is a useful link which helped me write the code above: [https://gist.github.com/vulcan25/55ce270d76bf78044d067c51e23ae5ad](https://gist.github.com/vulcan25/55ce270d76bf78044d067c51e23ae5ad)
+
+b. DB connection pool was undefined when called from `g` in the `base_controller.py`. This is a similar error to what there was which shows how to use `before_request`. Read [here](https://stackoverflow.com/questions/21138025/attributeerror-appctxglobals-object-has-no-attribute-user-in-flask)
