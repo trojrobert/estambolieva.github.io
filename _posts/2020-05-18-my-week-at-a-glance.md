@@ -21,11 +21,11 @@ I wanted to share how you, as a busy professional, can schedule your week and do
 
 
 1. Podcast recording with Mısra Turp on the topic of *'[So you want to be a data scientist?](https://www.soyouwanttobeadatascientist.com/)'*
-2. My participation in the panel talks for [STEM Zone Nigeria](https://stemzoneng.com/) on the topic of *'World changing tides: Artificial intelligence and other emerging technologies'* - thanks Temitope Bolaji Adeniyi for the invitation
+2. My participation in the panel talks for [STEM Zone Nigeria](https://stemzoneng.com/) on the topic of *'World changing tides: Artificial intelligence and other emerging technologies'* - thanks Temitope Bolaji Adeniyi for the invitation. [Here](http://katstam.com/emerging-technologies/) you can find my summary of the conversation along with the link to the recorded session.
 
-![STEM Zone Nigeria Conference](https://github.com/estambolieva/estambolieva.github.io/blob/master/assets/img/uploads/my_week/STEM_ZONE_Nigeria.jpg)
+![STEM Zone Nigeria Conference](https://raw.githubusercontent.com/estambolieva/estambolieva.github.io/master/assets/img/uploads/my_week/STEM_ZONE_Nigeria.jpg)
 
-![I for STEM Zone Nigeria](https://github.com/estambolieva/estambolieva.github.io/blob/master/assets/img/uploads/my_week/I_for_STEM_Nigeria.jpg)
+![I for STEM Zone Nigeria](https://raw.githubusercontent.com/estambolieva/estambolieva.github.io/master/assets/img/uploads/my_week/I_for_STEM_Nigeria.jpg)
 
 
 **Learning Time**
